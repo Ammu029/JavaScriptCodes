@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="musicCSS.css">
+    <script src="https://kit.fontawesome.com/9247ac1ded.js" crossorigin="anonymous"></script>
+    <script src="musicScript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <img src="/MusicPlayerCode/468-thumbnail.png" class="song-img">
+
+            <h1>Despacito</h1>
+
+            <p>Luis Fonsi Ft. Puerto Rican</p>
+
+            <audio id="songs" class="songs1" controls>
+                <source src="/MusicPlayerCode/sample.mp3" type="audio/mpeg">
+            </audio>
+
+            <input id="progress" type="range" value="0" >
+
+            <div class="controlss">
+                <div><i class="fa-solid fa-backward"></i></div>
+            
+                 <div onclick="playPause()"><i id="ctrlIcon1" class="fa-solid fa-play "></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="musicCSS.css">
+    <script src="https://kit.fontawesome.com/9247ac1ded.js" crossorigin="anonymous"></script>
+    <script src="musicScript.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <img src="/MusicPlayerCode/468-thumbnail.png" class="song-img">
+
+            <h1>Despacito</h1>
+
+            <p>Luis Fonsi Ft. Puerto Rican</p>
+
+            <audio id="songs" class="songs1">
+                <source src="/MusicPlayerCode/sample.mp3" type="audio/mpeg">
+            </audio>
+
+            <input id="progress" type="range" value="0">
+
+            <div class="controlss">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i id="ctrlIcon1" class="fa-solid fa-play "></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let ctrl = document.getElementsByClassName("fa-solid fa-pause")[0]; // Fetch elements with class 'fa-solid' and 'fa-pause'
+        console.log("data", ctrl);
+    </script>
+</body>
+
+</html>
